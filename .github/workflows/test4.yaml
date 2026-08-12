@@ -1,4 +1,4 @@
-name: File operations
+name: File operations in github
 on : workflow_dispatch
 
 jobs:
