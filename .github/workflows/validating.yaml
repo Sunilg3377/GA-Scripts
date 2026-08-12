@@ -12,3 +12,9 @@ jobs:
 
        - name: Disaply the file content
          run: cat devops.txt
+
+       - name: Permissions
+         run: chmod +x uptime.sh
+
+       - name: execute the shell script
+         run: ./uptime.sh
