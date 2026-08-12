@@ -7,5 +7,8 @@ jobs:
 
     steps:
 
+       - name: checkout the repo
+         uses: actions/checkout@v7
+
        - name: Disaply the file content
          run: cat devops.txt
