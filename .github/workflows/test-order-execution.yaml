@@ -1,0 +1,16 @@
+name: jobs exec testing
+on: workflow_dispatch
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: job_1 step
+        run: echo "this is job1 running"
+
+  job2:
+     runs-on: ubuntu-latest
+     steps:
+       - name: job_2 step
+         run: echo "this is job2 running
+    
