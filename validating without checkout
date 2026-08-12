@@ -1,4 +1,4 @@
-name: File operations in github
+name: validating without checkout
 on : workflow_dispatch
 
 jobs:
