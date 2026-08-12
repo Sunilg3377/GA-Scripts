@@ -11,10 +11,12 @@ jobs:
          uses: actions/checkout@v7
 
        - name: Disaply the file content
-         run: cat devops.txt
+         run: |
+             cat devops.txt
+             chmod +x uptime.sh
+             ./uptime.sh
 
-       - name: Permissions
-         run: chmod +x uptime.sh
+      
+         
 
-       - name: execute the shell script
-         run: ./uptime.sh
+        
