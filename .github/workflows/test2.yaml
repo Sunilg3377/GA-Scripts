@@ -7,12 +7,12 @@ jobs:
 
       steps:
      
-        -name: Hello display
-         run: echo "Hello sunil"
+        - name: Hello display
+          run: echo "Hello sunil"
 
 
-        -name: display the date
-         run: date 
+        - name: display the date
+          run: date 
     
      
 
