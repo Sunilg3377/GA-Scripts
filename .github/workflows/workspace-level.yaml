@@ -1,0 +1,20 @@
+name: workspace-level
+on: workflow_dispatch
+
+env:
+  BRAND: NIKE
+  PLATFORM: GITHUB
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: step job1
+        run: echo "Brand is $BRAND"
+
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: step job2
+        run: echo "company is $PLATFORM"
+   
