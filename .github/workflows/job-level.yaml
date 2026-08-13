@@ -1,0 +1,27 @@
+name: Step_level_variable
+on: workflow_dispatch
+
+jobs:
+  job1:
+   runs-on: ubuntu-latest
+   env:
+     CITY: Hyderabad
+     TRAINER: Sunil
+
+   steps:
+     - name: step-level example
+       env:
+         CITY: HYDERABAD
+         TRAINER: SUNIL
+       run: |
+        echo "city is $CITY"
+        echo "Trainer is $TRAINER"
+
+  
+     - name: Next step
+       run: echo "$Trainer and $CITY"
+     
+       
+        
+    
+       
