@@ -19,7 +19,7 @@ jobs:
 
   
      - name: Next step
-       run: echo "$Trainer and $CITY"
+       run: echo "$TRAINER and $CITY"
      
        
         
