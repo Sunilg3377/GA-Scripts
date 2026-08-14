@@ -1,0 +1,18 @@
+name: step-level timeout
+on: workflow_dispatch
+
+jobs:
+  job1:
+   runs-on: ubuntu-latest
+
+   steps:
+     - name: start
+       run: echo "job started"
+
+     - name: long sleep
+       timeout-minutes: 1
+       run: sleep 360
+
+     - name: end
+       run: echo "job ended"
+       
