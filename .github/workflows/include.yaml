@@ -13,8 +13,7 @@ jobs:
            node: 18
            message: optimized build
    steps:
-     - name: show values
-       run: |
+     -  run: |
          echo" os ${{matrix.os}}"
          echo"Node  ${{matrix.node}}"
          echo" Message ${{matrix.message}}"
